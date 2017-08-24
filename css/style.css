@@ -54,7 +54,7 @@ body {
     width: 750px;
     text-align: center;
     z-index: 5;
-    background-color: #c7c7c7;
+    background-color: #c7c7c7; 
 }
 .nav li {
     cursor: pointer;
@@ -68,7 +68,7 @@ body {
 }
 
 .nav li:last-child {
-    margin-right: 0;
+    margin-right: 0; 
 }
 
 .nav li.active {

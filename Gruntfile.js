@@ -17,11 +17,6 @@ module.exports = function(grunt) {
             js: {
                 files: ['js/**/*.js','js/**/*.json'],
                 tasks: ['uglify']
-            },
-            html: {
-                files: [ '*.html'],
-                tasks: [ 'nunjucks'],
-                options: {livereload: true }
             }
         },
 
@@ -45,19 +40,6 @@ module.exports = function(grunt) {
                 cwd: 'images',
                 src: ['**'],
                 dest: 'build/images'
-            }
-        },
-        nunjucks : { // nunjucks task
-            options: {
-                data: grunt.file.readJSON("data.json"),
-            },
-            render: {
-                files: [{
-                    expand: true,
-                    src: ["*.html"],
-                    dest: "build/",
-                    ext: ".html"
-                }]
             }
         },
         imagemin: { // Task
@@ -102,7 +84,7 @@ module.exports = function(grunt) {
                 src: [
                     'build/css/*.css',
                     'build/js/*.js',
-                    'build/*.html'
+                    '*.html'
                 ]
             },
             options: {
@@ -111,13 +93,6 @@ module.exports = function(grunt) {
             }
         },
         notify: {
-            sass: {
-                options: {
-                    title: 'CSS Files built ',
-                    message: 'SCSS compile task complete'
-
-                }
-            },
             server: {
                 options: {
                     message: 'Server is ready!'
@@ -127,11 +102,19 @@ module.exports = function(grunt) {
     });
 
     // Load the plugins to run your tasks
-    require("load-grunt-tasks")(grunt, { scope: "devDependencies" });
+    
+    //require("load-grunt-tasks")(grunt, { scope: "devDependencies" });
+    grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-contrib-copy');
+    grunt.loadNpmTasks('grunt-contrib-imagemin');
+    grunt.loadNpmTasks('grunt-contrib-cssmin');
+    grunt.loadNpmTasks('grunt-contrib-uglify');
+    grunt.loadNpmTasks('grunt-browser-sync');
+    grunt.loadNpmTasks('grunt-notify');
     //grunt.loadNpmTasks('grunt-contrib-cssmin');
     
 
-    grunt.registerTask('default', 'html templates', [  'copy', 'nunjucks', 'cssmin','uglify','browserSync',  'notify:server', 'watch']);
+    grunt.registerTask('default', 'html templates', [  'copy',  'cssmin','uglify','browserSync',  'notify:server', 'watch']);
    // grunt.registerTask('purecss', 'convert into one', ['purifycss']);
 
 };

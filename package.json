@@ -5,20 +5,14 @@
   "author": "Mohit",
   "license": "ISC",
   "devDependencies": {
-    "grunt": "^0.4.5",
+    "grunt": "^1.0.1",
     "grunt-browser-sync": "^2.2.0",
-    "grunt-cli": "^1.1.0",
     "grunt-contrib-copy": "^1.0.0",
     "grunt-contrib-cssmin": "^2.2.1",
-    "grunt-contrib-imagemin": "^1.0.1",
+    "grunt-contrib-imagemin": "^2.0.1",
+    "grunt-contrib-uglify": "^3.0.1",
     "grunt-contrib-watch": "^1.0.0",
-    "grunt-notify": "^0.4.5",
-    "grunt-nunjucks-2-html": "^3.0.0",
-    "grunt-nunjucks-render": "^0.4.0",
-    "grunt-sync": "^0.5.2",
-    "load-grunt-tasks": "^3.5.2",
-    "grunt-contrib-concat": "^0.5.1",
-    "grunt-contrib-uglify": "^0.9.1"
+    "grunt-notify": "^0.4.5"
   },
   "dependencies": {
     "grunt-serve": "^0.1.6"
