@@ -1,0 +1,42 @@
+<div class="container-fluid">
+	<div class="row">
+	<!-- enumerate all photos -->
+		<div class="col-md-12">		
+			<div id="id_big" ng-repeat="photo in photos" ng-show="isActive($index)">
+				<div id="id_big_img">
+					<img class="slide" ng-swipe-right="showPrev()" ng-swipe-left="showNext()" ng-src="{{photo.imageUrl}}" />
+				</div>
+				<div id="id_content">
+					<h1>
+						{{photo.imageTitle}}
+					</h1>
+					<h5>
+						{{photo.imageDesc}}
+					</h5>	
+				</div>
+				<div id="id_controls">
+					<a class="arrow prev" href="javascript:void(0)" ng-click="showPrev()">Prev</a>
+					<a class="arrow next" href="javascript:void(0)" ng-click="showNext()">Next</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+	<!-- prev / next controls -->
+		<div class="col-md-12">
+			
+		</div>
+	</div>
+	<div class="row">
+	
+		<div class="col-md-12">		
+			
+		<!-- extra navigation controls -->
+			<ul class="nav">
+				<li ng-repeat="photo in photos" ng-class="{'active':isActive($index)}">
+					<img ng-src="{{photo.imageUrl}}" alt="" title="" ng-click="showPhoto($index);" />
+				</li>
+			</ul>
+		</div>
+	</div>		
+</div>

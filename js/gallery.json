@@ -1,0 +1,53 @@
+var gallery = {
+	"images": [
+	{
+		"imageDesc": "Morbi sed vulputate nunc. Fusce quis dolor eget quam condimentum efficitur sit amet quis est. Aenean tempor dictum ipsum, eu egestas nibh iaculis id. Suspendisse potenti.",
+		"imageTitle": "Etiam pellentesque",
+		"imageUrl": "/images/altair2.jpg",
+	},
+	{
+		"imageDesc": "Aliquam pellentesque, lorem euismod ultrices interdum, neque velit finibus dui, at accumsan sem neque vitae ligula. Sed volutpat vestibulum ex quis pellentesque.",
+		"imageTitle": "Morbi sed vulputate nunc",
+		"imageUrl": "/images/altair3.jpg",
+	},
+	{
+		"imageDesc": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi quam massa, maximus et ullamcorper sit amet, hendrerit non dolor.",
+		"imageTitle": "volutpat justo interdum ac",
+		"imageUrl": "/images/altair4.jpg",
+	},
+	{
+		"imageDesc": "Integer interdum pellentesque sapien ut aliquam. Donec eget tincidunt leo. Nam nec odio vel lectus cursus pulvinar vitae sed ex. Cras et ex eget neque commodo hendrerit. Donec in finibus ligula, at fermentum lorem.",
+		"imageTitle": "Sed id gravida nibh",
+		"imageUrl": "/images/altair5.jpg",
+	},
+	{
+		"imageDesc": "Donec lacus mi, mattis a scelerisque a, malesuada consequat massa. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi quam massa, maximus et ullamcorper sit amet, hendrerit non dolor. ",
+		"imageTitle": "facilisis posuere",
+		"imageUrl": "/images/altair6.jpg",
+	},
+	{
+		"imageDesc": "Cras et ex eget neque commodo hendrerit. Donec in finibus ligula, at fermentum lorem. Mauris venenatis condimentum arcu, eu eleifend urna accumsan a.",
+		"imageTitle": "pulvinar vitae sed ex",
+		"imageUrl": "/images/altair7.jpg",
+	},
+	{
+		"imageDesc": "Mauris sodales, nisi at sollicitudin efficitur, arcu enim pulvinar nibh, vel varius tortor augue ut ligula. Morbi tempor felis nec nisi malesuada accumsan. ",
+		"imageTitle": "Vestibulum ante ipsum",
+		"imageUrl": "/images/altair8.jpg",
+	},
+	{
+		"imageDesc": "Aliquam imperdiet risus eros, quis auctor augue ullamcorper id. Aenean porta enim non facilisis posuere. Aliquam pellentesque, lorem euismod ultrices interdum, neque velit finibus dui, at accumsan sem neque vitae ligula.",
+		"imageTitle": "malesuada consectetur massa",
+		"imageUrl": "/images/altair9.jpg",
+	},
+	{
+		"imageDesc": "Integer sed ullamcorper felis. Donec rutrum, libero eu lobortis pellentesque, lacus libero pretium est, ac laoreet leo nisl a felis. Aliquam erat volutpat.",
+		"imageTitle": "Vivamus quis dolor nulla",
+		"imageUrl": "/images/altair1.jpg",
+	},
+	{
+		"imageDesc": "Cras quis accumsan erat, quis faucibus nulla. Donec pulvinar gravida ex, sed condimentum mi feugiat vitae. Fusce vel erat libero.",
+		"imageTitle": "Vestibulum ante ipsum primis",
+		"imageUrl": "/images/altair10.jpg",
+	}]
+};
